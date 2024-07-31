@@ -4,10 +4,10 @@ import numpy as np
 import pickle
 
 # Load the model
-clf = pickle.load(open("mymodel.pkl","rb"))
+clf = pickle.load(open("my_model.pkl","rb"))
 
 def predict(data):
-    clf = pickle.load(open("mymodel.pkl","rb"))
+    clf = pickle.load(open("my_model.pkl","rb"))
     return clf.predict(data)
 
 
@@ -28,7 +28,7 @@ with col1:
 
 st.text('')
 if st.button("Seles Prediction "):
-    result = clf.predict(np.array([[tv,rd,newspaper]]))
+    result = clf.predict(np.array([[GRE,SOP,University Rating]]))
     st.text(result[0])
 
-st.markdown("Developed By Meet Patel at NIELIT Daman")
+st.markdown("Developed By  Niraj at NIELIT Daman")
