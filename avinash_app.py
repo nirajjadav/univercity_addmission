@@ -28,7 +28,7 @@ with col1:
 
 st.text('')
 if st.button("Seles Prediction "):
-    result = clf.predict(np.array([[GRE,SOP,University Rating]]))
+    result = clf.predict(np.array([[GRE,SOP,UniversityRating]]))
     st.text(result[0])
 
 st.markdown("Developed By  Niraj at NIELIT Daman")
