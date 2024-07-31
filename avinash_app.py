@@ -4,10 +4,10 @@ import numpy as np
 import pickle
 
 # Load the model
-clf = pickle.load(open("my_model.pkl","rb"))
+clf = pickle.load(open("my_model.pkl","wb"))
 
 def predict(data):
-    clf = pickle.load(open("my_model.pkl","rb"))
+    clf = pickle.load(open("my_model.pkl","wb"))
     return clf.predict(data)
 
 
