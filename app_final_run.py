@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # Load the model once
-with open("university_lr.pkl", "rb") as f:
+with open("my_model.pkl", "rb") as f:
     clf = pickle.load(f)
 
 def predict(data):
@@ -33,4 +33,4 @@ if st.button("Chance To Get Admission"):
     # Display result
     st.text(f"Admission Chance: {result[0]}")
 
-st.markdown("Developed at Pratha Modasia")
+st.markdown("Developed at Jadav Niraj")
