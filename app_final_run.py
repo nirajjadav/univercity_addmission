@@ -4,7 +4,7 @@ import pickle
 
 # Load the model once
 with open("university_lr.pkl", "rb") as f:
-clf = pickle.load(f)
+    clf = pickle.load(f)
 
 def predict(data):
     return clf.predict(data)
